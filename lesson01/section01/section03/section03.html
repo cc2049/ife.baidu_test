@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小薇学院第三节任务</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.main{
+		background: #eee;
+		width: 98%;
+		height: auto;
+		min-height: 300px;
+		min-height: 300px;
+		border: 1px solid #999;
+		margin: 20px auto;
+		/*overflow: hidden;*//*方案二使用*/
+		display: flex;
+	}
+	/*三列布局左右固定宽度，中间自适应
+	方案一：左后使用绝对定位absolute，中间使用margin-left和margin-right。*/
+	/*方案二：左右使用浮动，中间使用margin，注意中间的div需要放在左右div的后面。
+但是使用浮动后，要想父元素的高度等于子元素的最高高度，就必须清楚浮动，在父元素内加overflow:hidden;or在父元素闭合标签前加一个空div，这个空div清除浮动clear：both；
+	*/
+	/*方案三：flexbox布局，直接给父元素设置display：flex;中间的div加一个flex：1;中间和右边的需要加一个height:100%;*/
+
+	.main_left{
+		width: 160px;
+		height: 80px;
+		border: 1px solid #999;
+		margin: 20px;
+		padding: 20px;
+		background: #fff;
+		/*position: absolute;*//*方案一*/
+		/*float: left;方案二*/
+		
+		
+	}
+	.main_left span{
+		margin-left: 6px;
+	}
+	.main_left img{
+		vertical-align: top;
+		border: 1px solid #999;
+	}
+	.content{
+		width: auto;
+		border: 1px solid #999;
+		/*margin: 20px;*/
+		margin:20px 0;
+		padding: 20px;
+		background: #fff;
+		/*margin-left: 240px;
+		margin-right: 160px;*//*方案一
+		/*margin-left: 240px;
+		margin-right: 160px;方案二*/
+		flex: 1;
+		height: 100%;
+		line-height: 25px;
+	}
+	.content p{
+		padding: 10px 0;
+	}
+	.main_right{
+		width: 120px;
+		border: 1px solid #999;
+		margin: 20px;
+		text-align: center;
+		background: #fff;
+		/*position: absolute;
+		right: 10px;
+		top:20px;*//*方案一*/
+		/*float: right;方案二*/
+		height: 100%;
+				
+		
+	}
+	.main_right img{
+		border: 1px solid #999;
+		margin-top: 20px;
+
+ 	}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="main_left">
+			<img src="team1.jpg" alt="">
+			<span>国宝大队</span>
+		</div>
+		<div class="content">
+			<p>在过去的三年中，百度前端技术学院累积吸引了上万名同学参加，并且有数十名同学在学习后，顺利加入了百度，成为了百度的前端工程师。</p>
+			<p>2017年新学期，我们在保留原有的已经经历过实践历练的模式下，又加入了更多的工程师导师资源，以及新的内容，希望能够帮助有志于通过技术改变生活的同学们掌握到希望学到的技术。</p>
+            <p>新学期报名从即日起到3月15日，整个学期会进行到4月24日，期待大家的踊跃参加！</p>
+            <p>2017年新学期，我们在保留原有的已经经历过实践历练的模式下，又加入了更多的工程师导师资源，以及新的内容，希望能够帮助有志于通过技术改变生活的同学们掌握到希望学到的技术。</p>
+            <p>新学期报名从即日起到3月15日，整个学期会进行到4月24日，期待大家的踊跃参加！</p>
+            <p>2017年新学期，我们在保留原有的已经经历过实践历练的模式下，又加入了更多的工程师导师资源，以及新的内容，希望能够帮助有志于通过技术改变生活的同学们掌握到希望学到的技术。</p>
+		</div>
+		<div class="main_right">
+			<img src="team1.jpg" alt="">
+			<img src="team1.jpg" alt="">
+			<img src="team1.jpg" alt="">
+			<img src="team1.jpg" alt="">
+		</div>
+		
+	</div><!-- main结束 -->
+</body>
+</html>
