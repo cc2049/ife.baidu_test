@@ -1,0 +1,330 @@
+/*documentCSS*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+.main{
+	min-width: 1280px;
+	width: 100%;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+	color: #787b83;
+}
+header{
+	height: 57px;
+	width: 96%;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	/*background: #666;*/
+}
+.logo{
+	text-align: center;
+	float: left;
+	font-family: "SimHei";
+	font-size: 21px;
+	line-height: 57px;
+}
+.logo img{
+	 vertical-align: middle;
+}
+.nav{
+	float: right;
+}
+.nav li{
+	float: left;
+	list-style: none;
+	width: 66px;
+	height: 57px;
+	line-height: 57px;
+	text-align: center;
+	display: block;
+	padding-right: 20px;
+}
+.nav li a:hover,.nav li a:active,.active{
+	color: #e74f4d;
+	border-bottom: 5px solid #e74f4d;
+	display: block;
+}
+.person{
+	
+	font-style: normal;
+	color: #e74f4d;
+}
+content{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;	
+}
+
+.mask01{
+	background: #040000;
+	opacity: 0.8;
+}
+.big-pic img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.time{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	color: #fff;
+	font-size: 21px;
+}
+.time h1{
+	font-size: 60px;
+}
+.time p{
+	padding-top: 50px;
+}
+.time button{
+	border: none;
+	width: 334px;
+	height: 66px;
+	background: #e74f4d;
+	font-size: 31px;
+	color: #fff;
+	margin-top: 80px;
+}
+.row{
+	width: 100%;
+	height: 250px;	
+	background: #fff;
+}
+.col0{
+	width: 25%;
+	height: 250px;	
+	text-align: center;
+	margin: 0 auto;
+	float: left;
+	padding-top: 40px;
+}
+.col0 img{
+	display: block; 
+	margin:auto;
+	margin-bottom: 40px; 
+}
+.colw{
+	height: 30px;
+	
+	border-right: 2px solid red;
+}
+.row2{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;     /*清除浮动*/	
+	background: #ededec;
+	text-align: center;
+	font-family: "SimHei";
+	font-size: 30px;
+	opacity: 0.5;
+}
+.row2 img{
+	display: block; 
+	margin:40px auto;
+	 
+}
+.row3{
+	width: 100%;
+	height: 340px;
+	background: url(ditu.png) no-repeat;
+	text-align: center;
+	color: #fff;
+	font-size: 21px;
+}
+.mask02{
+	width: 100%;
+	height: 340px;
+	background: #aa3533;
+	opacity: 0.2;
+	z-index: 2000;
+}
+.city{
+	position: relative;
+	top: -300px;
+}
+.city p{
+	padding: 20px 0;
+}
+
+.city span{
+	font-size: 16px;
+	margin: 50px 0;
+}
+
+select{
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 20px;
+	margin-top: 50px;
+	cursor:pointer;
+}
+option{
+	background: #e3e2e4;	
+}
+.action1{
+	height: 580px;
+	width: 100%;
+	background: #f7f7f7;
+	text-align: center;
+	
+}
+.ac01{
+	width: 220px;
+	height: 320px; 
+	display: inline-block;
+	margin-top: 60px;
+	margin-right: 30px;
+	
+}
+.a01{
+	width: 220px;
+	height: 310px;
+	padding: 10px 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	background: #fff;
+}
+.ac01 span{
+	font-size: 18px;
+	font-weight: bold;	
+}
+.nt01{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+		
+}
+.nt01-l{
+	width: 851px;
+	
+	float: left;	
+	color: #fff;
+	font-size: 22px;
+	padding: 10% 0;
+	background: url(nt01.png) no-repeat;
+}
+.nt01-r{
+	float: right;
+	width: 32%;
+	line-height: 30px;
+	margin-top: 150px;	
+}
+.cc3{
+	height: 521px;
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+	font-size: 22px;
+	display: flex;
+	display: -ms-flexbox;	  /* TWEENER - IE 10 */
+	display: -webkit-flex;
+}
+.cc01{
+	width: 33.3%;
+	height: 100%;
+	color: #fff;
+	margin: 0 auto;
+	background: #e74f4d;	
+}
+.cc02{
+	width: 33.3%;
+	height: 100%;
+	color: #000;
+	background: #fff;	
+}
+.cc03{
+	width: 33.3%;
+	height: 100%;	
+}
+.end{
+	height: 650px;
+	/*width: 100%;*/
+	margin: 0 auto;	
+}
+.end-top{
+	text-align: center;
+}
+.end-top h2{	
+	padding-top:100px;
+	margin-bottom: 30px;
+}
+.end-left-t{
+	width: 300px;
+	float: left;
+	line-height: 25px;
+	margin-top: 100px;
+	margin-left: 150px;
+}
+.end-right{
+	width: 700px;
+	float: right;
+	margin-top: 100px;
+	
+}
+.end-right input{
+	width: 300px;
+	height: 46px;
+	background: #ededef;
+	margin-bottom: 30px;
+	border: none;
+	padding-left: 20px;
+	margin-right: 20px;
+	font-size: 16px;
+}
+.end-right textarea{
+	background: #ededef;
+	border: none;
+	font-size: 16px;
+}
+.end-right button{
+	font-size: 18px;
+}
+footer{
+	width: 100%;
+	height: 420px;
+	clear: both;
+	margin-top: 100px;
+	text-align: center;
+	color: #fff;
+	font-family: "宋体";
+	line-height: 30px;
+}
+.ft{
+	clear: both;
+	height: 360px;
+	background: #33363f;
+}
+.fb{
+	height: 60px;
+	background: #2f2f38;
+}
+.ft h2{
+	padding-top: 100px;
+}
+.ft img{
+	margin-top: 40px;
+}
+.fb{
+	text-align: left;
+	padding-left: 200px;
+	padding-top: 20px;
+	font-size: 18px;
+}
+.fb span{
+	float: right;
+	margin-right: 200px;
+}
+.fb a:link,.fb a:visited{
+	color: #fff;
+}
